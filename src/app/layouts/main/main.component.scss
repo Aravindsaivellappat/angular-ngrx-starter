@@ -1,0 +1,19 @@
+.ng-sidebar__content {
+    position: fixed;
+    left: 40px;
+    width: 9.5rem;
+}
+
+.inner-wrapper {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    // padding-top: 12.18rem;
+    padding-top: 7.18rem;
+}
+
+@media all and (min-width: 768px) {
+    .inner-wrapper {
+        margin-left: 292px;
+    }
+}
