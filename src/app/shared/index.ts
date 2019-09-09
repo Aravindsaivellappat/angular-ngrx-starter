@@ -5,7 +5,7 @@ export * from './auth/auth-jwt.service';
 export * from './auth/has-any-authority.directive';
 export * from './auth/principal.service';
 
-// export * from './services';
+export * from './services';
 
 export * from './events/event-manager';
 

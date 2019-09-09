@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -7,7 +9,7 @@ import { reducers, metaReducers } from './store/reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { NgrxRouterStoreModule } from './store/reducers/router/ngrx-router.module';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,6 +42,7 @@ import {
         EffectsModule.forRoot([AppEffects]),
         StoreRouterConnectingModule.forRoot(),
         NgrxRouterStoreModule,
+        NgxSpinnerModule,
 
         // Project modules
         AppRoutingModule,
